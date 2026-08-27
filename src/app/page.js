@@ -6,7 +6,6 @@ import React, { useEffect, useState } from "react";
 
 export default function about() {
   let [users, setUsers] = useState([]);
-  console.log(users);
 
   useEffect(() => {
     async function getUsers() {
@@ -29,7 +28,7 @@ export default function about() {
   return (
     <div>
       <Navbar />
-      <div className="px-2  5 gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="px-5 gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {users &&
           users.map((user) => {
             return <UserCard key={user.id} user={user} />;

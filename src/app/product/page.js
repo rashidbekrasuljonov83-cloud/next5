@@ -39,7 +39,7 @@ export default async function Product() {
   return (
     <div>
       <Navbar />
-      <div className=" px-25 justify-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-15">
+      <div className=" px-5 justify-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-15">
         {products.products.map((prod) => {
           return <ProductCard key={prod.id} product={prod} />;
         })}
